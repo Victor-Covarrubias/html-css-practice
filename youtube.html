@@ -15,10 +15,18 @@
             .search-bar{
                 font-size: 20px;
                 margin-left: 12px;
+                display: block;
             }
 
             .video-title{
                 width: 300px;
+            }
+
+            .video-preview{
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
             }
 
             
@@ -27,26 +35,56 @@
     <body>
         <input class="search-bar" type="text" placeholder="Search">
 
-        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-        <!--type text, checkbox...-->
-        
-        <!--
-        display property
-        block element = takes all the entire line like a paragraph even if we change the width
-        inline block element = takes as much space as they need like the image and input elements
-        inline element = just appear inside text elements like span and strong
-        -->
+        <div class="video-preview">
 
-        <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-        </p>
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            <!--type text, checkbox...-->
+            
+            <!--
+            display property
+            block element = takes all the entire line like a paragraph even if we change the width
+            inline block element = takes as much space as they need like the image and input elements
+            inline element = just appear inside text elements like span and strong
+            a div is a block element thats is meant to be a container
+            -->
 
-        <p class="video-author">
-            Marques Brownlee
-        </p>
+            <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
 
-        <p class="video-stats">
-            3.4M views &#183; 6 months ago
-        </p>
+            <p class="video-author">
+                Marques Brownlee
+            </p>
+
+            <p class="video-stats">
+                3.4M views &#183; 6 months ago
+            </p>
+        </div>
+
+        <div class="video-preview">
+
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            <!--type text, checkbox...-->
+            
+            <!--
+            display property
+            block element = takes all the entire line like a paragraph even if we change the width
+            inline block element = takes as much space as they need like the image and input elements
+            inline element = just appear inside text elements like span and strong
+            a div is a block element thats is meant to be a container
+            -->
+
+            <p class="video-title">
+                Try Not To Laugh Challenge #9
+            </p>
+
+            <p class="video-author">
+                Markiplier
+            </p>
+
+            <p class="video-stats">
+                19M views &#183; 4 years ago
+            </p>
+        </div>
     </body>
 </html>
