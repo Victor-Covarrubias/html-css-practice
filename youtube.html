@@ -5,6 +5,7 @@
         <style>
             .thumbnail{
                 width: 300px;
+                display: block;
                 /*
                 object-fit: cover;
                 object-position: left;
@@ -15,11 +16,37 @@
                 font-size: 20px;
                 margin-left: 12px;
             }
+
+            .video-title{
+                width: 300px;
+            }
+
+            
         </style>
     </head>
     <body>
+        <input class="search-bar" type="text" placeholder="Search">
+
         <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
         <!--type text, checkbox...-->
-        <input class="search-bar" type="text" placeholder="Search">
+        
+        <!--
+        display property
+        block element = takes all the entire line like a paragraph even if we change the width
+        inline block element = takes as much space as they need like the image and input elements
+        inline element = just appear inside text elements like span and strong
+        -->
+
+        <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+
+        <p class="video-author">
+            Marques Brownlee
+        </p>
+
+        <p class="video-stats">
+            3.4M views &#183; 6 months ago
+        </p>
     </body>
 </html>
