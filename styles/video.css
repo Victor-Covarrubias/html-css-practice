@@ -11,7 +11,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .video-info-grid{
@@ -21,12 +21,12 @@
 
 
 .profile-picture{
-    width: 40px;
+    width: 36px;
     border-radius: 50px;
 }
 
 .thumbnail-row{
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     position: relative;
 }
 
@@ -47,14 +47,40 @@
     row-gap: 40px;
 }
 
+/*to crerate a responsive site we need a media query*/
+
+@media (max-width: 750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .video-time{
-    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 500;
+    /*
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
+    we can use just padding
+    1 value: all four directions
+    2 values: vertical horizontal
+    4 values: clockwise (top, right, bottom and left)
+    */
+    padding: 4px;
     border-radius: 2px;
     background-color: black;
     color: white;

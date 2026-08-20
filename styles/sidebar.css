@@ -5,4 +5,33 @@
     bottom: 0;
     top: 55px;
     width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+    to display flexboxes vertically
+    also justify-content and align-items are reversed
+    */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sidebar-link:hover{
+    background-color: rgb(232, 232, 232);
+}
+
+/*to taget all elements of one type inside another one*/
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div{
+    font-size: 10px;
 }

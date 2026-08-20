@@ -1,11 +1,19 @@
 p{
-    font-family: Roboto, Arial, Helvetica, sans-serif;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 body{
+    /*
+    the video time, paragraphs and all text inside the body 
+    will get the font family since this is the outer element
+    the inner elements (text elements) will get the same style because of the
+    inheritance
+    */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     margin: 0;
     padding-top: 80px;
-    padding-left: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(247, 247, 247);
 }
